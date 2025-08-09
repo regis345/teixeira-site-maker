@@ -92,25 +92,31 @@ export const Footer = () => {
             <h3 className="text-lg font-bold text-foreground">Links Rápidos</h3>
             <div className="space-y-3">
               <button
-                onClick={() => scrollToSection('inicio')}
+                onClick={() => window.location.href = '/'}
                 className="block text-sm text-muted-foreground hover:text-detective-gold transition-colors duration-200 text-left"
               >
                 Início
               </button>
               <button
-                onClick={() => scrollToSection('sobre')}
+                onClick={() => window.location.href = '/#sobre'}
                 className="block text-sm text-muted-foreground hover:text-detective-gold transition-colors duration-200 text-left"
               >
                 Sobre o Detetive
               </button>
               <button
-                onClick={() => scrollToSection('servicos')}
+                onClick={() => window.location.href = '/#servicos'}
                 className="block text-sm text-muted-foreground hover:text-detective-gold transition-colors duration-200 text-left"
               >
                 Serviços
               </button>
               <button
-                onClick={() => scrollToSection('contato')}
+                onClick={() => window.location.href = '/investigacao-juridica'}
+                className="block text-sm text-muted-foreground hover:text-detective-gold transition-colors duration-200 text-left"
+              >
+                Investigação Jurídica
+              </button>
+              <button
+                onClick={() => window.location.href = '/#contato'}
                 className="block text-sm text-muted-foreground hover:text-detective-gold transition-colors duration-200 text-left"
               >
                 Contato

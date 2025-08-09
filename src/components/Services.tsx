@@ -153,13 +153,22 @@ export const Services = () => {
               </div>
             </div>
             
-            <div className="text-center lg:text-right">
+            <div className="text-center lg:text-right space-y-4">
               <Button 
                 onClick={handleWhatsAppClick}
                 size="lg"
                 className="bg-gradient-gold hover:shadow-gold text-detective-dark font-bold px-8 py-4 transition-all duration-300 hover:scale-105"
               >
                 Solicitar Orçamento
+              </Button>
+              
+              <Button 
+                onClick={() => window.location.href = '/investigacao-juridica'}
+                variant="outline"
+                size="lg"
+                className="border-detective-gold text-detective-gold hover:bg-detective-gold hover:text-detective-dark font-bold px-8 py-4 transition-all duration-300 hover:scale-105 block lg:inline-block"
+              >
+                Investigação Jurídica
               </Button>
               
               <p className="text-sm text-muted-foreground mt-3">

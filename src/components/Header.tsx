@@ -27,19 +27,31 @@ export const Header = () => {
     window.open(url, '_blank');
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
+  const handleNavigation = (item: { id: string; href: string }) => {
+    if (item.href.startsWith('/#')) {
+      // Navegação interna na página inicial
+      if (window.location.pathname !== '/') {
+        window.location.href = item.href;
+      } else {
+        const sectionId = item.id;
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      // Navegação para outras páginas
+      window.location.href = item.href;
     }
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
-    { label: "Início", id: "inicio" },
-    { label: "Sobre", id: "sobre" },
-    { label: "Serviços", id: "servicos" },
-    { label: "Contato", id: "contato" }
+    { label: "Início", id: "inicio", href: "/" },
+    { label: "Sobre", id: "sobre", href: "/#sobre" },
+    { label: "Serviços", id: "servicos", href: "/#servicos" },
+    { label: "Investigação Jurídica", id: "juridica", href: "/investigacao-juridica" },
+    { label: "Contato", id: "contato", href: "/#contato" }
   ];
 
   return (
@@ -53,7 +65,7 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('inicio')}>
+          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.href = '/'}>
             <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
               <Shield className="w-7 h-7 text-detective-dark" />
             </div>
@@ -68,7 +80,7 @@ export const Header = () => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavigation(item)}
                 className="text-foreground hover:text-detective-gold transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -107,7 +119,7 @@ export const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item)}
                   className="block w-full text-left px-4 py-2 text-foreground hover:text-detective-gold hover:bg-detective-accent/50 rounded transition-colors duration-200"
                 >
                   {item.label}
