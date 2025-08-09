@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Tokens especializados para investigação
+				'detective-gold': 'hsl(var(--detective-gold))',
+				'detective-gold-light': 'hsl(var(--detective-gold-light))',
+				'detective-dark': 'hsl(var(--detective-dark))',
+				'detective-surface': 'hsl(var(--detective-surface))',
+				'detective-accent': 'hsl(var(--detective-accent))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +73,20 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-overlay': 'var(--gradient-overlay)'
+			},
+			boxShadow: {
+				'professional': 'var(--shadow-professional)',
+				'gold': 'var(--shadow-gold)',
+				'deep': 'var(--shadow-deep)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			keyframes: {
 				'accordion-down': {
