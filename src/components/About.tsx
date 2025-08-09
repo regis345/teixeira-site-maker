@@ -62,13 +62,15 @@ export const About = () => {
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 O detetive particular <strong className="text-detective-gold">Reginaldo Silva</strong> é conhecido no mundo 
-                da investigação particular como <strong>Detetive Teixeira</strong> e possui mais de 14 anos de experiência na área.
+                da investigação particular como <strong>Detetive Teixeira</strong> e possui mais de 14 anos de experiência 
+                atuando em <strong className="text-detective-gold">Brasília-DF e região metropolitana</strong>.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Sua vasta experiência e talento o fizeram colecionar inúmeros casos de sucesso nas áreas 
-                empresarial, conjugal e particular. Desempenhamos nossos serviços com rapidez, discrição 
-                e de forma confidencial, programados conforme a conveniência de cada cliente.
+                Atendendo clientes em <strong className="text-detective-gold">todas as regiões administrativas do DF</strong> 
+                - Plano Piloto, Taguatinga, Ceilândia, Samambaia, Sobradinho, Planaltina, Gama, Santa Maria, 
+                São Sebastião, Recanto das Emas, Riacho Fundo, Núcleo Bandeirante, Brazlândia, Paranoá, 
+                Águas Claras, Vicente Pires e Fercal. Desempenhamos nossos serviços com rapidez e discrição total.
               </p>
             </div>
 
@@ -139,12 +141,20 @@ export const About = () => {
                 <MapPin className="w-6 h-6 text-detective-gold mr-3" />
                 <h3 className="text-lg font-bold text-foreground">Área de Atuação</h3>
               </div>
-              <p className="text-muted-foreground">
-                <strong className="text-detective-gold">Base:</strong> Brasília - DF
-              </p>
-              <p className="text-muted-foreground">
-                <strong className="text-detective-gold">Atuação:</strong> Todo o Brasil, inclusive cidades do interior
-              </p>
+              <div className="space-y-2">
+                <p className="text-muted-foreground">
+                  <strong className="text-detective-gold">Base:</strong> Brasília-DF (Asa Sul, Asa Norte, Lago Sul, Lago Norte)
+                </p>
+                <p className="text-muted-foreground">
+                  <strong className="text-detective-gold">Principais cidades:</strong> Taguatinga, Ceilândia, Samambaia, Águas Claras, Sobradinho, Planaltina, Gama
+                </p>
+                <p className="text-muted-foreground">
+                  <strong className="text-detective-gold">Entorno:</strong> Formosa-GO, Luziânia-GO, Valparaíso-GO, Cidade Ocidental-GO, Santo Antônio do Descoberto-GO
+                </p>
+                <p className="text-muted-foreground">
+                  <strong className="text-detective-gold">Nacional:</strong> Todo o Brasil, inclusive interior
+                </p>
+              </div>
             </Card>
           </div>
         </div>

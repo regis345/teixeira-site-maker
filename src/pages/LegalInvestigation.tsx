@@ -112,8 +112,9 @@ const LegalInvestigation = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Suporte especializado para advogados e escritórios de advocacia com 
-                investigações técnicas, coleta de provas e relatórios com validade jurídica.
+                Suporte especializado para advogados e escritórios de advocacia em 
+                <strong className="text-detective-gold">Brasília-DF e região</strong>, com investigações técnicas, 
+                coleta de provas e relatórios com validade jurídica para tribunais do DF e federais.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -145,8 +146,8 @@ const LegalInvestigation = () => {
               </h2>
               
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Investigações técnicas e especializadas para suporte a processos judiciais 
-                com total conformidade legal e relatórios detalhados.
+                Investigações jurídicas especializadas para advogados em Brasília, atendendo 
+                o TJDFT, Tribunais Federais, STJ e STF com total conformidade legal.
               </p>
             </div>
 

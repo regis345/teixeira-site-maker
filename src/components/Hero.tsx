@@ -40,15 +40,16 @@ export const Hero = () => {
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
                 <strong className="text-detective-gold">RS – INVESTIGAÇÕES</strong> é uma empresa privada com mais de 
-                <strong className="text-detective-gold"> 14 anos</strong> de investigação particular, em Brasília - DF.
+                <strong className="text-detective-gold"> 14 anos</strong> de investigação particular em 
+                <strong className="text-detective-gold">Brasília-DF</strong> e região.
               </p>
             </div>
             
             <div className="space-y-4">
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Sempre pautando nosso trabalho na ética e no sigilo, almejando excelência 
-                na prestação dos serviços de investigação. Uma empresa séria e focada em 
-                resultados positivos para os seus clientes.
+                Detetive particular atuando em <strong className="text-detective-gold">Brasília, Taguatinga, Ceilândia, 
+                Samambaia, Águas Claras</strong> e todo o Distrito Federal. Sempre pautando nosso trabalho 
+                na ética e no sigilo, com resultados positivos comprovados.
               </p>
               
               <Button 
