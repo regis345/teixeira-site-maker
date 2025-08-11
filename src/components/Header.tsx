@@ -22,7 +22,7 @@ export const Header = () => {
 
   const handleWhatsAppClick = () => {
     const whatsappNumber = "556133563925";
-    const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Teixeira";
+    const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Regis";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
@@ -71,7 +71,7 @@ export const Header = () => {
             </div>
             <div>
               <div className="text-xl font-bold text-foreground">Detetive</div>
-              <div className="text-detective-gold font-semibold text-sm -mt-1">TEIXEIRA</div>
+              <div className="text-detective-gold font-semibold text-sm -mt-1">REGIS</div>
             </div>
           </div>
 

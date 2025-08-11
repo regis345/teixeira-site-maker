@@ -4,7 +4,7 @@ import heroImage from "@/assets/detective-hero.jpg";
 
 export const Hero = () => {
   const whatsappNumber = "556133563925";
-  const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Teixeira";
+  const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Regis";
   
   const handleWhatsAppClick = () => {
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
