@@ -51,7 +51,7 @@ export const Footer = () => {
             </div>
             
             <p className="text-muted-foreground leading-relaxed">
-              RS - Investigações, mais de 14 anos oferecendo serviços profissionais 
+              agencia de - Investigações, mais de 14 anos oferecendo serviços profissionais 
               de investigação particular com total discrição e ética.
             </p>
             
@@ -159,7 +159,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="text-sm text-muted-foreground text-center lg:text-left">
-            © 2024 Detetive Regis - RS Investigações. Todos os direitos reservados.
+            © 2024 Detetive Regis - agencia de Investigações. Todos os direitos reservados.
           </div>
           
           <div className="text-sm text-muted-foreground text-center lg:text-right">
@@ -172,7 +172,7 @@ export const Footer = () => {
         <Card className="bg-detective-surface/50 border-detective-accent p-6 mt-8">
           <p className="text-xs text-muted-foreground text-center leading-relaxed">
             <strong className="text-detective-gold">Aviso Legal:</strong> Todos os serviços são realizados dentro da legalidade vigente. 
-            RS - Investigações atua com total ética profissional, respeitando a privacidade e os direitos individuais. 
+            agencia de - Investigações atua com total ética profissional, respeitando a privacidade e os direitos individuais. 
             Nossos investigadores são devidamente credenciados e seguem rigorosamente o código de conduta da profissão.
           </p>
         </Card>

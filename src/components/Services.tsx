@@ -127,7 +127,7 @@ export const Services = () => {
             <div className="lg:col-span-2 space-y-6">
               <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
                 Por que escolher a 
-                <span className="text-detective-gold"> RS Investigações</span>?
+                <span className="text-detective-gold"> agencia de Investigações</span>?
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">

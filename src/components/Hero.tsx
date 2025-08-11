@@ -39,7 +39,7 @@ export const Hero = () => {
               <div className="h-1 w-24 bg-gradient-gold rounded-full" />
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-                <strong className="text-detective-gold">RS – INVESTIGAÇÕES</strong> é uma empresa privada com mais de 
+                <strong className="text-detective-gold">agencia de – INVESTIGAÇÕES</strong> é uma empresa privada com mais de 
                 <strong className="text-detective-gold"> 14 anos</strong> de investigação particular em 
                 <strong className="text-detective-gold">Brasília-DF</strong> e região.
               </p>
