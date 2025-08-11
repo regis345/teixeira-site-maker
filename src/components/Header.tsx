@@ -21,6 +21,11 @@ export const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
+    // Google Ads Conversion Tracking
+    if (typeof window !== 'undefined' && window.trackWhatsAppConversion) {
+      window.trackWhatsAppConversion();
+    }
+    
     const whatsappNumber = "556133563925";
     const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Regis";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detetive Particular Brasília-DF | Reginaldo Regis - 14 Anos de Experiência</title>
     <meta name="description" content="🔍 Detetive Particular em Brasília-DF com 14+ anos de experiência. Investigação conjugal, empresarial e familiar no DF e entorno. Sigilo absoluto. Consulta grátis!" />
     <meta name="author" content="Reginaldo Silva Regis - Detetive Particular Brasília" />
-    <meta name="keywords" content="detetive particular brasília, investigação particular df, detetive brasília df, investigação conjugal brasília, detetive regis, investigação empresarial distrito federal, detetive ceilândia, investigação familiar brasília, localização de pessoas df, detetive samambaia, investigação águas claras, detetive planaltina" />
+    <meta name="keywords" content="detetive particular brasília, investigação particular df, detetive brasília df, investigação conjugal brasília, detetive regis, investigação empresarial distrito federal, detetive ceilândia, investigação familiar brasília, localização de pessoas df, detetive samambaia, investigação águas claras, detetive planaltina, contratar detetive brasília, detetive privado df, investigação infidelidade brasília" />
+    
+    <!-- Google Ads Meta Tags -->
+    <meta name="google-site-verification" content="" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Landing Page Optimization -->
+    <meta name="theme-color" content="#D4AF37" />
+    <link rel="canonical" href="https://detetiveregis.com.br" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Detetive Particular Brasília-DF | Reginaldo Regis" />
@@ -21,6 +29,28 @@
     <meta name="twitter:title" content="Detetive Particular Brasília-DF | Reginaldo Regis" />
     <meta name="twitter:description" content="🔍 Detetive credenciado em Brasília com 14+ anos de experiência. Investigação conjugal, empresarial e familiar." />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-CONVERSION_ID');
+      
+      // Enhanced Conversions setup
+      gtag('config', 'AW-CONVERSION_ID', {
+        'allow_enhanced_conversions': true
+      });
+    </script>
 
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -89,7 +119,61 @@
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Conversion Tracking Functions -->
+    <script>
+      // Global conversion tracking functions
+      window.trackWhatsAppConversion = function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/WhatsApp_Click',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_category': 'Lead',
+            'event_label': 'WhatsApp_Contact'
+          });
+        }
+      };
+
+      window.trackPhoneConversion = function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/Phone_Call',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_category': 'Lead',
+            'event_label': 'Phone_Contact'
+          });
+        }
+      };
+
+      window.trackFormConversion = function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-CONVERSION_ID/Form_Submit',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_category': 'Lead',
+            'event_label': 'Contact_Form'
+          });
+        }
+      };
+
+      // Page view tracking
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_view', {
+          'page_title': document.title,
+          'page_location': window.location.href,
+          'content_group1': 'Detective Services'
+        });
+      }
+    </script>
   </body>
 </html>

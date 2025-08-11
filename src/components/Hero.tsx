@@ -7,6 +7,11 @@ export const Hero = () => {
   const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Regis";
   
   const handleWhatsAppClick = () => {
+    // Google Ads Conversion Tracking
+    if (typeof window !== 'undefined' && window.trackWhatsAppConversion) {
+      window.trackWhatsAppConversion();
+    }
+    
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
