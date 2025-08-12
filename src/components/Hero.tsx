@@ -71,7 +71,7 @@ export const Hero = () => {
             <div className="bg-detective-surface/50 backdrop-blur-sm border border-detective-accent rounded-xl p-6 max-w-2xl">
               <p className="text-sm text-detective-gold font-semibold mb-2">DETETIVE CREDENCIADO</p>
               <p className="text-foreground leading-relaxed">
-                <strong>Reginaldo Silva</strong>, formado em investigação particular pelo instituto 
+                <strong>Detetive Particular</strong>, formado em investigação particular pelo instituto 
                 INVESTIG – Instituto de Inteligência e Investigação, graduado no curso: 
                 Tecnologia em Investigação Profissional, pela UNINTER.
               </p>

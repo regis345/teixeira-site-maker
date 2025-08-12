@@ -163,7 +163,7 @@ export const Footer = () => {
           </div>
           
           <div className="text-sm text-muted-foreground text-center lg:text-right">
-            <span className="text-detective-gold font-semibold">Reginaldo Silva</span> - 
+            <span className="text-detective-gold font-semibold">Detetive Particular</span> - 
             Detetive Particular Credenciado
           </div>
         </div>

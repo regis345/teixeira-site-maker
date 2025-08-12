@@ -44,7 +44,7 @@ export const About = () => {
           </Badge>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Reginaldo Silva
+            Detetive Particular
             <span className="text-detective-gold"> - Reginaldo</span>
           </h2>
         </div>
@@ -61,7 +61,7 @@ export const About = () => {
             
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                O detetive particular <strong className="text-detective-gold">Reginaldo Silva</strong> é conhecido no mundo 
+                O detetive particular <strong className="text-detective-gold">Detetive Particular</strong> é conhecido no mundo 
                 da investigação particular como <strong>Reginaldo</strong> e possui mais de 14 anos de experiência 
                 atuando em <strong className="text-detective-gold">Brasília-DF e região metropolitana</strong>.
               </p>
