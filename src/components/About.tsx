@@ -13,7 +13,7 @@ import {
 export const About = () => {
   const handleWhatsAppClick = () => {
     const whatsappNumber = "556133563925";
-    const whatsappMessage = "Olá! Gostaria de conhecer melhor o trabalho do Detetive Regis";
+    const whatsappMessage = "Olá! Gostaria de conhecer melhor o trabalho do Reginaldo";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
@@ -45,7 +45,7 @@ export const About = () => {
           
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
             Reginaldo Silva
-            <span className="text-detective-gold"> - Detetive Regis</span>
+            <span className="text-detective-gold"> - Reginaldo</span>
           </h2>
         </div>
 
@@ -62,7 +62,7 @@ export const About = () => {
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 O detetive particular <strong className="text-detective-gold">Reginaldo Silva</strong> é conhecido no mundo 
-                da investigação particular como <strong>Detetive Regis</strong> e possui mais de 14 anos de experiência 
+                da investigação particular como <strong>Reginaldo</strong> e possui mais de 14 anos de experiência 
                 atuando em <strong className="text-detective-gold">Brasília-DF e região metropolitana</strong>.
               </p>
               

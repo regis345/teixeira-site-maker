@@ -13,7 +13,7 @@ import {
 export const Footer = () => {
   const handleWhatsAppClick = () => {
     const whatsappNumber = "556133563925";
-    const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Detetive Regis";
+    const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Reginaldo";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
@@ -46,7 +46,7 @@ export const Footer = () => {
               </div>
               <div>
                 <div className="text-xl font-bold text-foreground">Detetive</div>
-                <div className="text-detective-gold font-semibold text-sm -mt-1">REGIS</div>
+                <div className="text-detective-gold font-semibold text-sm -mt-1">REGINALDO</div>
               </div>
             </div>
             
@@ -159,7 +159,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="text-sm text-muted-foreground text-center lg:text-left">
-            © 2024 Detetive Regis - agencia de Investigações. Todos os direitos reservados.
+            © 2024 Reginaldo - agencia de Investigações. Todos os direitos reservados.
           </div>
           
           <div className="text-sm text-muted-foreground text-center lg:text-right">
