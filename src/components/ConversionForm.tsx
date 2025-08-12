@@ -38,7 +38,7 @@ Email: ${formData.email}
 Serviço: ${formData.service}
 Mensagem: ${formData.message}`;
 
-    const url = `https://api.whatsapp.com/send?phone=556133563925&text=${encodeURIComponent(message)}`;
+    const url = `https://api.whatsapp.com/send?phone=5561982844543&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 
     toast({
@@ -62,7 +62,7 @@ Mensagem: ${formData.message}`;
       window.trackPhoneConversion();
     }
     
-    window.location.href = 'tel:+556133563925';
+    window.location.href = 'tel:+5561982844543';
   };
 
   const handleWhatsAppClick = () => {
@@ -72,7 +72,7 @@ Mensagem: ${formData.message}`;
     }
     
     const message = "Olá! Gostaria de contratar os serviços de investigação";
-    const url = `https://api.whatsapp.com/send?phone=556133563925&text=${encodeURIComponent(message)}`;
+    const url = `https://api.whatsapp.com/send?phone=5561982844543&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 

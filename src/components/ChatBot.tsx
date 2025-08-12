@@ -172,7 +172,7 @@ export const ChatBot = () => {
       console.error("Erro ao processar mensagem:", error);
       addBotMessage(
         "Desculpe, houve um erro temporário. Por favor, tente novamente ou " +
-        "entre em contato diretamente pelo WhatsApp: (61) 3356-3925"
+        "entre em contato diretamente pelo WhatsApp: (61) 98284-4543"
       );
     } finally {
       setIsLoading(false);
@@ -219,7 +219,7 @@ export const ChatBot = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "556133563925";
+    const whatsappNumber = "5561982844543";
     const whatsappMessage = `Olá Reginaldo! Vim através do chatbot do site. Meu nome é ${leadData.name || 'Cliente'} e preciso de ajuda com investigação particular.`;
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');

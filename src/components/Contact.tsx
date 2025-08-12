@@ -12,8 +12,8 @@ import {
 } from "lucide-react";
 
 export const Contact = () => {
-  const whatsappNumber = "556133563925";
-  const phoneNumber = "(61) 3356-3925";
+  const whatsappNumber = "5561982844543";
+  const phoneNumber = "(61) 98284-4543";
   
   const handleWhatsAppClick = () => {
     const whatsappMessage = "Olá! Gostaria de solicitar uma consultoria sobre investigação particular";

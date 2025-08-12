@@ -3,7 +3,7 @@ import { Phone, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/detective-hero.jpg";
 
 export const Hero = () => {
-  const whatsappNumber = "556133563925";
+  const whatsappNumber = "5561982844543";
   const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Reginaldo";
   
   const handleWhatsAppClick = () => {

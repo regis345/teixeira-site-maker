@@ -85,7 +85,7 @@ const benefits = [
 
 const LegalInvestigation = () => {
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "556133563925";
+    const whatsappNumber = "5561982844543";
     const whatsappMessage = "Olá! Sou advogado(a) e preciso de serviços de investigação para caso jurídico";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
