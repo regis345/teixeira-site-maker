@@ -32,30 +32,39 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Conteúdo Principal */}
           <div className="space-y-8">
+            {/* H1 SEO Otimizado (visualmente oculto) */}
+            <h1 className="sr-only">
+              Detetive Particular em Brasília DF - Investigação Profissional de Infidelidade, Pessoas Desaparecidas e Fraudes | Reginaldo Investigador Privado
+            </h1>
+            
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              {/* Título Visual Principal */}
+              <div className="text-5xl lg:text-7xl font-bold leading-tight" role="banner" aria-label="Slogan principal">
                 <span className="text-detective-gold">NÃO SEJA</span>
                 <br />
                 <span className="text-foreground">O ÚLTIMO</span>
                 <br />
                 <span className="text-detective-gold">A SABER</span>
-              </h1>
+              </div>
               
               <div className="h-1 w-24 bg-gradient-gold rounded-full" />
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-                <strong className="text-detective-gold">agencia de – INVESTIGAÇÕES</strong> é uma empresa privada com mais de 
-                <strong className="text-detective-gold"> 14 anos</strong> de investigação particular em 
-                <strong className="text-detective-gold">Brasília-DF</strong> e região.
+                <strong className="text-detective-gold">Detetive particular</strong> profissional com mais de 
+                <strong className="text-detective-gold"> 14 anos</strong> de experiência em investigação particular em 
+                <strong className="text-detective-gold">Brasília-DF</strong>. Especialista em investigação de infidelidade, 
+                pessoas desaparecidas e investigação empresarial em todo o Distrito Federal.
               </p>
             </div>
             
             <div className="space-y-4">
-              <p className="text-lg text-muted-foreground max-w-2xl">
-                Detetive particular atuando em <strong className="text-detective-gold">Brasília, Taguatinga, Ceilândia, 
-                Samambaia, Águas Claras</strong> e todo o Distrito Federal. Sempre pautando nosso trabalho 
-                na ética e no sigilo, com resultados positivos comprovados.
-              </p>
+              <h2 className="text-lg text-muted-foreground max-w-2xl">
+                <strong className="text-detective-gold">Investigador privado</strong> atuando em 
+                <strong className="text-detective-gold"> Brasília, Taguatinga, Ceilândia, 
+                Samambaia, Águas Claras</strong> e todo o Distrito Federal. Especialista em 
+                <strong className="text-detective-gold"> investigação de infidelidade conjugal</strong>, 
+                sempre pautando nosso trabalho na ética e no sigilo, com resultados positivos comprovados.
+              </h2>
               
               <Button 
                 onClick={handleWhatsAppClick}

@@ -7,6 +7,9 @@ import { ConversionForm } from "@/components/ConversionForm";
 import { Footer } from "@/components/Footer";
 import { ChatBot } from "@/components/ChatBot";
 import { DetectiveAI } from "@/components/DetectiveAI";
+import { SEOOptimizer } from "@/components/SEOOptimizer";
+import { AutoSEOContent } from "@/components/AutoSEOContent";
+import { SEOMonitor } from "@/components/SEOMonitor";
 
 const Index = () => {
   const handleLeadQualified = (leadData: any) => {
@@ -29,6 +32,9 @@ const Index = () => {
       <Footer />
       <ChatBot />
       <DetectiveAI onLeadQualified={handleLeadQualified} />
+      <SEOOptimizer autoOptimize={true} showDebugInfo={process.env.NODE_ENV === 'development'} />
+      <AutoSEOContent />
+      <SEOMonitor />
     </div>
   );
 };
