@@ -2,8 +2,9 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { MessageCircle, Send, X, Bot, User, Minimize2, Maximize2 } from "lucide-react";
+import { MessageCircle, Send, X, Bot, User, Minimize2, Maximize2, Brain } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useDetectiveAI } from "../hooks/useDetectiveAI";
 
 interface Message {
   id: string;
@@ -20,6 +21,10 @@ interface LeadData {
   urgency?: string;
   location?: string;
   description?: string;
+  aiScore?: number;
+  aiCategory?: string;
+  aiUrgency?: string;
+  aiConfidence?: number;
 }
 
 export const ChatBot = () => {
@@ -32,6 +37,16 @@ export const ChatBot = () => {
   const [conversationStage, setConversationStage] = useState("greeting");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
+  
+  // Integração com IA de análise
+  const {
+    isLoaded: aiLoaded,
+    leadScore,
+    behavior,
+    analyzeLead,
+    analyzeDetectiveIntent,
+    personalizeContent
+  } = useDetectiveAI();
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -71,8 +86,13 @@ export const ChatBot = () => {
     setIsLoading(true);
     
     try {
-      // Aqui você pode implementar a lógica de IA
-      // Por enquanto, vou criar um sistema de qualificação baseado em etapas
+      // Usa IA para analisar a intenção do usuário
+      let aiAnalysis = null;
+      if (aiLoaded) {
+        const intentAnalysis = analyzeDetectiveIntent(userMessage);
+        aiAnalysis = await analyzeLead(userMessage);
+        console.log('Análise IA da mensagem:', { intentAnalysis, aiAnalysis, behavior });
+      }
       
       let botResponse = "";
       let newLeadData = { ...leadData };
@@ -95,7 +115,31 @@ export const ChatBot = () => {
 
         case "case_type":
           newLeadData.caseType = userMessage;
-          botResponse = `Entendi sua situação sobre ${userMessage.toLowerCase()}.\n\n` +
+          
+          // Usa IA para personalizar a resposta baseada no tipo de caso
+          let personalizedResponse = "";
+          if (aiAnalysis && aiAnalysis.category !== 'geral') {
+            switch (aiAnalysis.category) {
+              case 'infidelidade':
+                personalizedResponse = "Entendo que suspeitas de infidelidade são extremamente delicadas. " +
+                  "Trabalho com total discrição e uso métodos legais para obter evidências sólidas.";
+                break;
+              case 'pessoa_desaparecida':
+                personalizedResponse = "Casos de pessoa desaparecida requerem ação rápida. " +
+                  "Tenho recursos e contatos especializados para este tipo de investigação.";
+                break;
+              case 'fraude':
+                personalizedResponse = "Investigações de fraude exigem análise técnica detalhada. " +
+                  "Coleto evidências que podem ser usadas juridicamente.";
+                break;
+              default:
+                personalizedResponse = `Entendi sua situação sobre ${userMessage.toLowerCase()}.`;
+            }
+          } else {
+            personalizedResponse = `Entendi sua situação sobre ${userMessage.toLowerCase()}.`;
+          }
+          
+          botResponse = `${personalizedResponse}\n\n` +
             "Em casos como este, a discrição e rapidez são fundamentais. " +
             "Para que eu possa avaliar a urgência e prioridade do seu caso:\n\n" +
             "Esta é uma situação que precisa de atenção **imediata** (até 24h), " +
@@ -105,7 +149,15 @@ export const ChatBot = () => {
 
         case "urgency":
           newLeadData.urgency = userMessage;
-          botResponse = `Perfeito! Classificamos seu caso como ${userMessage.toLowerCase()}.\n\n` +
+          
+          // Adiciona análise de urgência por IA
+          let urgencyNote = "";
+          if (aiAnalysis && (aiAnalysis.urgency === 'alta' || aiAnalysis.urgency === 'critica')) {
+            urgencyNote = "\n\n🚨 **Observação:** Pela análise da sua situação, " +
+              "recomendo que iniciemos a investigação o mais rápido possível para preservar evidências.";
+          }
+          
+          botResponse = `Perfeito! Classificamos seu caso como ${userMessage.toLowerCase()}.${urgencyNote}\n\n` +
             "Para otimizar nosso atendimento, em qual região de Brasília você está localizado " +
             "ou onde precisamos focar a investigação?\n\n" +
             "Atendemos todo o DF: Plano Piloto, Taguatinga, Ceilândia, Águas Claras, " +
@@ -124,9 +176,19 @@ export const ChatBot = () => {
 
         case "details":
           newLeadData.description = userMessage;
-          botResponse = `Obrigado pelas informações detalhadas, ${newLeadData.name}.\n\n` +
-            "Baseado no que você compartilhou, este é exatamente o tipo de caso em que " +
-            "temos expertise comprovada com mais de 14 anos de experiência.\n\n" +
+          
+          // Usa IA para dar feedback específico sobre o caso
+          let caseAssessment = "Baseado no que você compartilhou, este é exatamente o tipo de caso em que " +
+            "temos expertise comprovada com mais de 14 anos de experiência.";
+          
+          if (aiAnalysis && aiAnalysis.confidence > 0.6) {
+            caseAssessment = "Analisando os detalhes que você forneceu, posso confirmar que " +
+              "este caso está dentro da nossa área de especialização. " +
+              `A experiência de 14 anos em casos ${aiAnalysis.category !== 'geral' ? `de ${aiAnalysis.category}` : 'similares'} ` +
+              "nos permite oferecer uma abordagem muito eficaz.";
+          }
+          
+          botResponse = `Obrigado pelas informações detalhadas, ${newLeadData.name}.\n\n${caseAssessment}\n\n` +
             "Para finalizarmos e agendar uma conversa com o Reginaldo, " +
             "você poderia compartilhar seu melhor número de WhatsApp?";
           nextStage = "contact";
@@ -152,6 +214,14 @@ export const ChatBot = () => {
           botResponse = "Obrigado pela mensagem! O Reginaldo entrará em contato em breve.";
       }
 
+      // Salva dados da IA junto com o lead
+      if (aiAnalysis) {
+        newLeadData.aiScore = aiAnalysis.score;
+        newLeadData.aiCategory = aiAnalysis.category;
+        newLeadData.aiUrgency = aiAnalysis.urgency;
+        newLeadData.aiConfidence = aiAnalysis.confidence;
+      }
+      
       setLeadData(newLeadData);
       setConversationStage(nextStage);
       addBotMessage(botResponse);
@@ -254,10 +324,19 @@ export const ChatBot = () => {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-detective-accent bg-gradient-gold text-detective-dark rounded-t-lg">
             <div className="flex items-center space-x-2">
-              <Bot className="w-5 h-5" />
+              <div className="relative">
+                <Bot className="w-5 h-5" />
+                {aiLoaded && (
+                  <Brain className="w-3 h-3 absolute -top-1 -right-1 text-blue-500" />
+                )}
+              </div>
               <div>
-                <div className="font-bold text-sm">Assistente Reginaldo</div>
-                <div className="text-xs opacity-80">Detetive Particular - DF</div>
+                <div className="font-bold text-sm">
+                  Assistente Reginaldo {aiLoaded && <span className="text-blue-600">IA</span>}
+                </div>
+                <div className="text-xs opacity-80">
+                  Detetive Particular - DF {aiLoaded && "• Com IA"}
+                </div>
               </div>
             </div>
             <div className="flex space-x-2">
