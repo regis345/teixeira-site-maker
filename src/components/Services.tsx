@@ -69,13 +69,14 @@ export const Services = () => {
           </Badge>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Soluções Profissionais em
-            <span className="text-detective-gold"> Investigação</span>
+            Serviços de Detetive Particular em
+            <span className="text-detective-gold"> Brasília DF</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos serviços especializados de investigação particular com mais de 14 anos 
-            de experiência, sempre priorizando a discrição, ética e resultados eficazes.
+            <strong className="text-detective-gold">Detetive particular em Brasília</strong> oferecendo serviços especializados 
+            de <strong className="text-detective-gold">investigação particular</strong> com mais de 14 anos 
+            de experiência como <strong className="text-detective-gold">investigador privado no DF</strong>, sempre priorizando a discrição, ética e resultados eficazes.
           </p>
         </div>
 
@@ -126,8 +127,8 @@ export const Services = () => {
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2 space-y-6">
               <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
-                Por que escolher a 
-                <span className="text-detective-gold"> agencia de Investigações</span>?
+                Por que escolher nosso 
+                <span className="text-detective-gold"> Detetive Particular em Brasília DF</span>?
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
@@ -136,8 +137,8 @@ export const Services = () => {
                     <Clock className="w-6 h-6 text-detective-gold" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">14+ Anos de Experiência</h4>
-                    <p className="text-muted-foreground text-sm">Vasta experiência com centenas de casos resolvidos</p>
+                    <h4 className="font-semibold text-foreground mb-2">14+ Anos como Detetive Particular</h4>
+                    <p className="text-muted-foreground text-sm">Vasta experiência como investigador privado em Brasília com centenas de casos resolvidos</p>
                   </div>
                 </div>
                 
@@ -172,7 +173,7 @@ export const Services = () => {
               </Button>
               
               <p className="text-sm text-muted-foreground mt-3">
-                Atuamos em todo o Brasil
+                Detetive particular atuando em todo o Brasil, especialista em Brasília DF
               </p>
             </div>
           </div>

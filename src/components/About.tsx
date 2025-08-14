@@ -44,7 +44,7 @@ export const About = () => {
           </Badge>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Detetive Particular
+            Detetive Particular em Brasília DF
             <span className="text-detective-gold"> - Reginaldo</span>
           </h2>
         </div>
@@ -61,16 +61,20 @@ export const About = () => {
             
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                O detetive particular <strong className="text-detective-gold">Detetive Particular</strong> é conhecido no mundo 
-                da investigação particular como <strong>Reginaldo</strong> e possui mais de 14 anos de experiência 
-                atuando em <strong className="text-detective-gold">Brasília-DF e região metropolitana</strong>.
+                O <strong className="text-detective-gold">detetive particular em Brasília DF</strong> conhecido no mundo 
+                da investigação particular como <strong>Reginaldo</strong> é um 
+                <strong className="text-detective-gold">investigador privado</strong> com mais de 14 anos de experiência 
+                atuando como <strong className="text-detective-gold">detetive particular em Brasília-DF</strong> e região metropolitana.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Atendendo clientes em <strong className="text-detective-gold">todas as regiões administrativas do DF</strong> 
+                <strong className="text-detective-gold">Detetive particular em Brasília</strong> atendendo clientes em 
+                <strong className="text-detective-gold">todas as regiões administrativas do DF</strong> 
                 - Plano Piloto, Taguatinga, Ceilândia, Samambaia, Sobradinho, Planaltina, Gama, Santa Maria, 
                 São Sebastião, Recanto das Emas, Riacho Fundo, Núcleo Bandeirante, Brazlândia, Paranoá, 
-                Águas Claras, Vicente Pires e Fercal. Desempenhamos nossos serviços com rapidez e discrição total.
+                Águas Claras, Vicente Pires e Fercal. Como <strong className="text-detective-gold">investigador particular</strong> 
+                desempenhamos nossos serviços com rapidez e discrição total em todo o 
+                <strong className="text-detective-gold">Distrito Federal</strong>.
               </p>
             </div>
 
@@ -126,12 +130,14 @@ export const About = () => {
             <Card className="bg-detective-dark border-detective-gold p-8">
               <h3 className="text-xl font-bold text-detective-gold mb-4">Nossa Missão</h3>
               <p className="text-foreground leading-relaxed mb-6">
-                Entregar soluções individuais e personalizadas de investigações particulares 
-                nas áreas de infidelidade conjugal, empresarial e particular.
+                Como <strong className="text-detective-gold">detetive particular em Brasília DF</strong>, nossa missão é 
+                entregar soluções individuais e personalizadas de investigações particulares 
+                nas áreas de infidelidade conjugal, empresarial e particular em todo o Distrito Federal.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Atuar com total discrição, qualidade de serviço único e lícito com excelência, 
-                seja em campo ou no meio digital.
+                Como <strong className="text-detective-gold">investigador privado em Brasília</strong>, atuar com total discrição, 
+                qualidade de serviço único e lícito com excelência, seja em campo ou no meio digital, 
+                sempre respeitando a ética profissional do <strong className="text-detective-gold">detetive particular</strong>.
               </p>
             </Card>
 

@@ -27,8 +27,8 @@ export const AutoSEOContent = () => {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "@id": "https://reginaldodetetive.com/#localbusiness",
-        "name": "Reginaldo - Detetive Particular Brasília",
-        "description": "Detetive particular profissional em Brasília com mais de 14 anos de experiência em investigação privada, infidelidade conjugal, pessoas desaparecidas e investigação empresarial.",
+        "name": "Reginaldo - Detetive Particular em Brasília DF",
+        "description": "Detetive particular profissional em Brasília DF com mais de 14 anos de experiência como investigador privado. Especialista em investigação de infidelidade, pessoas desaparecidas e investigação empresarial no Distrito Federal.",
         "url": "https://reginaldodetetive.com",
         "telephone": "+55-61-98284-4543",
         "email": "contato@reginaldodetetive.com",
@@ -98,8 +98,8 @@ export const AutoSEOContent = () => {
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "Detetive Particular Reginaldo",
-        "description": "Serviços profissionais de investigação particular em Brasília e região metropolitana",
+        "name": "Detetive Particular em Brasília DF - Reginaldo",
+        "description": "Serviços profissionais de detetive particular em Brasília e região metropolitana do Distrito Federal. Investigador privado especialista em infidelidade, pessoas desaparecidas e investigação empresarial.",
         "serviceType": "Private Investigation Services",
         "provider": {
           "@type": "Person",
@@ -124,17 +124,17 @@ export const AutoSEOContent = () => {
       {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Investigação de Infidelidade Brasília",
-        "description": "Serviço especializado em investigação de infidelidade conjugal com métodos discretos e legais",
+        "name": "Detetive Particular - Investigação de Infidelidade Brasília DF",
+        "description": "Serviço especializado de detetive particular em investigação de infidelidade conjugal em Brasília com métodos discretos e legais. Investigador privado experiente no DF.",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Reginaldo Detetive Particular"
+          "name": "Reginaldo - Detetive Particular em Brasília DF"
         },
         "serviceType": "Infidelity Investigation",
-        "areaServed": "Brasília, DF",
+        "areaServed": "Brasília DF, Distrito Federal",
         "offers": {
           "@type": "Offer",
-          "description": "Investigação profissional de infidelidade",
+          "description": "Detetive particular profissional em Brasília DF - investigação de infidelidade",
           "priceRange": "Consulte valores"
         }
       }
@@ -161,10 +161,10 @@ export const AutoSEOContent = () => {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Como funciona a investigação de infidelidade em Brasília?",
+          "name": "Como funciona a investigação de infidelidade com detetive particular em Brasília DF?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A investigação de infidelidade é realizada com total discrição usando métodos legais. Coletamos evidências através de vigilância profissional, análise de comportamento e documentação fotográfica, sempre respeitando a privacidade e a lei."
+            "text": "A investigação de infidelidade com detetive particular em Brasília DF é realizada com total discrição usando métodos legais. Como investigador privado experiente, coletamos evidências através de vigilância profissional, análise de comportamento e documentação fotográfica, sempre respeitando a privacidade e a lei."
           }
         },
         {

@@ -34,7 +34,7 @@ export const Hero = () => {
           <div className="space-y-8">
             {/* H1 SEO Otimizado (visualmente oculto) */}
             <h1 className="sr-only">
-              Detetive Particular em Brasília DF - Investigação Profissional de Infidelidade, Pessoas Desaparecidas e Fraudes | Reginaldo Investigador Privado
+              Detetive Particular em Brasília DF - Investigador Privado Especialista em Infidelidade, Pessoas Desaparecidas e Investigação Empresarial | Reginaldo Detetive Particular Brasília
             </h1>
             
             <div className="space-y-4">
@@ -50,20 +50,25 @@ export const Hero = () => {
               <div className="h-1 w-24 bg-gradient-gold rounded-full" />
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-                <strong className="text-detective-gold">Detetive particular</strong> profissional com mais de 
-                <strong className="text-detective-gold"> 14 anos</strong> de experiência em investigação particular em 
-                <strong className="text-detective-gold">Brasília-DF</strong>. Especialista em investigação de infidelidade, 
-                pessoas desaparecidas e investigação empresarial em todo o Distrito Federal.
+                <strong className="text-detective-gold">Detetive particular em Brasília DF</strong> profissional com mais de 
+                <strong className="text-detective-gold"> 14 anos</strong> de experiência como 
+                <strong className="text-detective-gold">investigador particular em Brasília</strong>. 
+                <strong className="text-detective-gold">Detetive particular especialista</strong> em investigação de infidelidade, 
+                pessoas desaparecidas e investigação empresarial em todo o 
+                <strong className="text-detective-gold">Distrito Federal</strong>.
               </p>
             </div>
             
             <div className="space-y-4">
               <h2 className="text-lg text-muted-foreground max-w-2xl">
-                <strong className="text-detective-gold">Investigador privado</strong> atuando em 
+                <strong className="text-detective-gold">Detetive particular em Brasília DF</strong> atuando como 
+                <strong className="text-detective-gold">investigador privado</strong> em 
                 <strong className="text-detective-gold"> Brasília, Taguatinga, Ceilândia, 
-                Samambaia, Águas Claras</strong> e todo o Distrito Federal. Especialista em 
-                <strong className="text-detective-gold"> investigação de infidelidade conjugal</strong>, 
-                sempre pautando nosso trabalho na ética e no sigilo, com resultados positivos comprovados.
+                Samambaia, Águas Claras</strong> e todo o Distrito Federal. 
+                <strong className="text-detective-gold">Detetive particular especialista</strong> em 
+                <strong className="text-detective-gold"> investigação de infidelidade conjugal em Brasília</strong>, 
+                sempre pautando nosso trabalho como <strong className="text-detective-gold">detetive particular</strong> 
+                na ética e no sigilo, com resultados positivos comprovados.
               </h2>
               
               <Button 
@@ -80,9 +85,10 @@ export const Hero = () => {
             <div className="bg-detective-surface/50 backdrop-blur-sm border border-detective-accent rounded-xl p-6 max-w-2xl">
               <p className="text-sm text-detective-gold font-semibold mb-2">DETETIVE CREDENCIADO</p>
               <p className="text-foreground leading-relaxed">
-                <strong>Detetive Particular</strong>, formado em investigação particular pelo instituto 
-                INVESTIG – Instituto de Inteligência e Investigação, graduado no curso: 
-                Tecnologia em Investigação Profissional, pela UNINTER.
+                <strong>Detetive Particular em Brasília DF</strong>, formado em investigação particular pelo instituto 
+                INVESTIG – Instituto de Inteligência e Investigação. <strong>Investigador privado graduado</strong> no curso: 
+                Tecnologia em Investigação Profissional, pela UNINTER. <strong>Detetive particular credenciado</strong> 
+                atuando profissionalmente em Brasília e região metropolitana do Distrito Federal.
               </p>
             </div>
           </div>
