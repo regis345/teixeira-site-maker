@@ -54,7 +54,7 @@ export const AutoSEOContent = () => {
         },
         "openingHours": "Mo-Su 00:00-23:59",
         "sameAs": [
-          "https://wa.me/5561982844543"
+          ""
         ],
         "serviceArea": {
           "@type": "Place",

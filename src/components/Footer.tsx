@@ -12,7 +12,7 @@ import {
 
 export const Footer = () => {
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "5561982844543";
+    const whatsappNumber = "";
     const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Reginaldo";
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
