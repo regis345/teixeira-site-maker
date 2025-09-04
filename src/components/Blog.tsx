@@ -6,8 +6,8 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "Como Escolher um Detetive Particular Confiável em Brasília",
-    excerpt: "Guia completo com 10 critérios essenciais para contratar um investigador particular competente e ético em Brasília DF.",
+    title: "Detetive Particular Brasília DF - Como Escolher Investigador Confiável",
+    excerpt: "Guia completo com 10 critérios essenciais para contratar um detetive particular competente e ético em Brasília DF. Saiba como escolher.",
     category: "Guias",
     readTime: "5 min",
     publishDate: "15 Mar 2024",
@@ -15,8 +15,8 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Investigação de Infidelidade: O que é Legal e Ético",
-    excerpt: "Entenda os limites legais da investigação conjugal e como um detetive particular pode ajudar de forma ética e profissional.",
+    title: "Investigação Infidelidade Brasília DF - Detetive Particular Legal",
+    excerpt: "Entenda os limites legais da investigação conjugal em Brasília DF e como um detetive particular pode ajudar de forma ética.",
     category: "Direitos",
     readTime: "7 min",
     publishDate: "10 Mar 2024",
@@ -24,8 +24,8 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "Investigação Empresarial: Protegendo seu Negócio",
-    excerpt: "Como a investigação particular pode prevenir fraudes, vazamentos e proteger os interesses da sua empresa em Brasília.",
+    title: "Investigação Empresarial Brasília DF - Detetive Particular Empresas",
+    excerpt: "Como o detetive particular pode prevenir fraudes empresariais, vazamentos e proteger os interesses da sua empresa em Brasília DF.",
     category: "Empresarial",
     readTime: "6 min",
     publishDate: "05 Mar 2024",
@@ -33,8 +33,8 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "Localização de Pessoas: Métodos Legais e Eficazes",
-    excerpt: "Técnicas modernas e legais utilizadas por detetives particulares para localizar pessoas desaparecidas no DF.",
+    title: "Localização de Pessoas Brasília DF - Detetive Particular Busca",
+    excerpt: "Técnicas modernas e legais utilizadas por detetives particulares para localizar pessoas desaparecidas em Brasília DF e região.",
     category: "Técnicas",
     readTime: "4 min",
     publishDate: "28 Fev 2024",
@@ -42,8 +42,8 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Investigação Patrimonial: Quando e Como Fazer",
-    excerpt: "Guia sobre investigação de bens e patrimônio para processos judiciais, divórcios e cobranças em Brasília DF.",
+    title: "Investigação Patrimonial Brasília DF - Detetive Particular Bens",
+    excerpt: "Guia sobre investigação de bens e patrimônio por detetive particular para processos judiciais, divórcios e cobranças em Brasília DF.",
     category: "Jurídico",
     readTime: "8 min",
     publishDate: "20 Fev 2024",
@@ -51,8 +51,8 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: "Tecnologia na Investigação Particular Moderna",
-    excerpt: "Como a tecnologia revolucionou os métodos de investigação particular, mantendo sempre a ética e legalidade.",
+    title: "Tecnologia Investigação Particular - Detetive Moderno Brasília DF",
+    excerpt: "Como a tecnologia revolucionou os métodos de investigação do detetive particular moderno em Brasília DF, mantendo ética e legalidade.",
     category: "Tecnologia",
     readTime: "6 min",
     publishDate: "15 Fev 2024",
@@ -71,10 +71,10 @@ export const Blog = () => {
             Blog Especializado
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Artigos sobre Investigação Particular
+            Blog Detetive Particular Brasília DF - Investigação
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Informações atualizadas, dicas práticas e orientações legais sobre investigação particular em Brasília DF.
+            Artigos especializados sobre investigação particular, dicas de segurança e orientações legais para Brasília DF e região.
           </p>
         </div>
 

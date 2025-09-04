@@ -46,11 +46,11 @@ export const Testimonials = () => {
             Casos de Sucesso
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Depoimentos de Clientes Satisfeitos
+            Casos de Sucesso - Detetive Particular Brasília DF
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Mais de 500 casos resolvidos com sucesso em Brasília DF. 
-            Veja o que nossos clientes dizem sobre nossos serviços de investigação particular.
+            Mais de 500 casos de investigação particular resolvidos com sucesso em Brasília DF. 
+            Veja depoimentos reais de clientes sobre nossos serviços de detetive particular.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export const Testimonials = () => {
         <div className="text-center mt-12">
           <div className="bg-primary/10 rounded-lg p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              Mais de 15 Anos de Experiência
+              Detetive Particular Experiente em Brasília DF - 15 Anos
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
