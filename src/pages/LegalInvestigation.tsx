@@ -87,7 +87,7 @@ const LegalInvestigation = () => {
   const handleWhatsAppClick = () => {
     const whatsappNumber = "";
     const whatsappMessage = "Olá! Sou advogado(a) e preciso de serviços de investigação para caso jurídico";
-    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
 

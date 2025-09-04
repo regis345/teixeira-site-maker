@@ -38,7 +38,7 @@ Email: ${formData.email}
 Serviço: ${formData.service}
 Mensagem: ${formData.message}`;
 
-    const url = `https://api.whatsapp.com/send?phone=&text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 
     toast({
@@ -72,7 +72,7 @@ Mensagem: ${formData.message}`;
     }
     
     const message = "Olá! Gostaria de contratar os serviços de investigação";
-    const url = `https://api.whatsapp.com/send?phone=&text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 

@@ -28,7 +28,7 @@ export const Header = () => {
     
     const whatsappNumber = "";
     const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços do Reginaldo";
-    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
 

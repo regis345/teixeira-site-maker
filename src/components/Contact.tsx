@@ -17,7 +17,7 @@ export const Contact = () => {
   
   const handleWhatsAppClick = () => {
     const whatsappMessage = "Olá! Gostaria de solicitar uma consultoria sobre investigação particular";
-    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
   };
 
