@@ -6,16 +6,12 @@ import { Contact } from "@/components/Contact";
 import { ConversionForm } from "@/components/ConversionForm";
 import { Footer } from "@/components/Footer";
 import { ChatBot } from "@/components/ChatBot";
-import { DetectiveAI } from "@/components/DetectiveAI";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOOptimizer } from "@/components/SEOOptimizer";
 import { AutoSEOContent } from "@/components/AutoSEOContent";
 import { SEOMonitor } from "@/components/SEOMonitor";
 
 const Index = () => {
-  const handleLeadQualified = (leadData: any) => {
-    console.log('Lead qualificado pela IA:', leadData);
-    // Aqui você pode enviar dados para analytics, CRM, etc.
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -31,7 +27,7 @@ const Index = () => {
       </main>
       <Footer />
       <ChatBot />
-      <DetectiveAI onLeadQualified={handleLeadQualified} />
+      <WhatsAppButton />
       <SEOOptimizer autoOptimize={true} showDebugInfo={process.env.NODE_ENV === 'development'} />
       <AutoSEOContent />
       <SEOMonitor />
