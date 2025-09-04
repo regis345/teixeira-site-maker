@@ -6,6 +6,8 @@ import { Contact } from "@/components/Contact";
 import { ConversionForm } from "@/components/ConversionForm";
 import { Footer } from "@/components/Footer";
 import { ChatBot } from "@/components/ChatBot";
+import { Testimonials } from "@/components/Testimonials";
+import { Blog } from "@/components/Blog";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOOptimizer } from "@/components/SEOOptimizer";
 import { AutoSEOContent } from "@/components/AutoSEOContent";
@@ -22,6 +24,8 @@ const Index = () => {
         </section>
         <About />
         <Services />
+        <Testimonials />
+        <Blog />
         <ConversionForm />
         <Contact />
       </main>
