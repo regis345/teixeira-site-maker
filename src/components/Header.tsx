@@ -61,34 +61,38 @@ export const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-detective-dark/95 backdrop-blur-md border-b border-detective-accent shadow-professional' 
+          ? 'bg-detective-dark/95 backdrop-blur-lg border-b border-detective-gold/20 shadow-professional' 
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-8 lg:px-12">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.href = '/'}>
-            <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <Shield className="w-7 h-7 text-detective-dark" />
+          <div className="flex items-center space-x-4 cursor-pointer group" onClick={() => window.location.href = '/'}>
+            <div className="relative">
+              <div className="w-14 h-14 bg-gradient-gold rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <Shield className="w-8 h-8 text-detective-dark" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-detective-gold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
             </div>
-            <div>
-              <div className="text-xl font-bold text-foreground">Detetive</div>
-              <div className="text-detective-gold font-semibold text-sm -mt-1">REGINALDO</div>
+            <div className="space-y-1">
+              <div className="text-2xl font-black text-foreground tracking-tight">Detetive</div>
+              <div className="text-detective-gold font-bold text-base -mt-1 tracking-wider">REGINALDO</div>
             </div>
           </div>
 
           {/* Menu Desktop */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-12">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavigation(item)}
-                className="text-foreground hover:text-detective-gold transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-detective-gold transition-all duration-300 font-semibold text-lg relative group"
               >
                 {item.label}
+                <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-detective-gold transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
           </nav>
@@ -97,9 +101,9 @@ export const Header = () => {
           <div className="hidden lg:flex">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-gold hover:shadow-gold text-detective-dark font-bold px-6 py-2 transition-all duration-300 hover:scale-105"
+              className="bg-gradient-gold hover:shadow-gold text-detective-dark font-bold px-8 py-3 text-lg rounded-xl transition-all duration-500 hover:scale-105 shadow-lg"
             >
-              <MessageCircle className="w-4 h-4 mr-2" />
+              <MessageCircle className="w-5 h-5 mr-3" />
               WhatsApp
             </Button>
           </div>

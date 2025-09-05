@@ -89,15 +89,24 @@ Paleta: Preto elegante, dourado sofisticado, cinzas investigativos
     --detective-surface: 220 25% 12%;
     --detective-accent: 220 15% 25%;
 
-    /* Gradientes elegantes */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--detective-dark)), hsl(220 25% 8%));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--detective-gold)), hsl(var(--detective-gold-light)));
-    --gradient-overlay: linear-gradient(180deg, transparent, hsl(220 30% 5% / 0.8));
-
-    /* Sombras investigativas */
-    --shadow-professional: 0 10px 30px -10px hsl(220 30% 5% / 0.5);
-    --shadow-gold: 0 0 40px hsl(var(--detective-gold) / 0.2);
+    /* Professional Shadows */
+    --shadow-professional: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.15);
+    --shadow-gold: 0 0 40px rgba(212, 175, 55, 0.3), 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+    --shadow-elegant: 0 32px 64px -12px rgba(0, 0, 0, 0.2);
+    --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     --shadow-deep: 0 25px 50px -15px hsl(220 30% 5% / 0.6);
+    
+    /* Professional Gradients */
+    --gradient-detective: linear-gradient(135deg, hsl(var(--detective-dark)) 0%, hsl(var(--detective-accent)) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45, 73%, 52%) 0%, hsl(43, 74%, 49%) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsla(var(--detective-dark), 0.4) 50%, hsl(var(--detective-dark)) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(var(--detective-dark)) 0%, hsl(var(--detective-surface)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--detective-dark)), hsl(220 25% 8%));
+    
+    /* Professional Spacing */
+    --spacing-section: 6rem;
+    --spacing-content: 2rem;
 
     /* Transições suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

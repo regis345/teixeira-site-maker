@@ -35,18 +35,24 @@ export const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-detective-surface/30">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="sobre" className="py-24 bg-gradient-to-br from-detective-surface/20 via-background to-detective-surface/30">
+      <div className="max-w-7xl mx-auto px-8 lg:px-12">
         {/* Cabeçalho */}
-        <div className="text-center space-y-6 mb-16">
-          <Badge variant="outline" className="border-detective-gold text-detective-gold px-4 py-2">
-            CONHEÇA O DETETIVE
-          </Badge>
+        <div className="text-center space-y-8 mb-20">
+          <div className="inline-flex items-center bg-detective-gold/10 border border-detective-gold/30 rounded-full px-6 py-3">
+            <span className="text-detective-gold font-bold text-sm tracking-wider uppercase">Conheça o Detetive</span>
+          </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Detetive Particular em Brasília DF
-            <span className="text-detective-gold"> - Reginaldo</span>
-          </h2>
+          <div className="space-y-6">
+            <h2 className="text-4xl lg:text-6xl font-black text-foreground leading-tight">
+              Detetive Particular em Brasília DF
+              <span className="text-detective-gold block lg:inline"> - Reginaldo</span>
+            </h2>
+            
+            <div className="flex justify-center">
+              <div className="h-1 w-32 bg-gradient-gold rounded-full" />
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
