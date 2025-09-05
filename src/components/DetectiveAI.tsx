@@ -90,7 +90,7 @@ export const DetectiveAI: React.FC<DetectiveAIProps> = ({ onLeadQualified }) => 
       : "Olá, vim pelo site e preciso de um detetive particular.";
     
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/5561999887766?text=${encodedMessage}`, '_blank');
   };
 
   if (!isLoaded) {

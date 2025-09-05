@@ -289,7 +289,7 @@ export const ChatBot = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "";
+    const whatsappNumber = "5561999887766";
     const whatsappMessage = `Olá Reginaldo! Vim através do chatbot do site. Meu nome é ${leadData.name || 'Cliente'} e preciso de ajuda com investigação particular.`;
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
