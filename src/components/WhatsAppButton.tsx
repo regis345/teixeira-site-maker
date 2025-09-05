@@ -6,7 +6,7 @@ export const WhatsAppButton = () => {
     const message = encodeURIComponent(
       "Olá! Preciso dos serviços de um detetive particular em Brasília DF. Gostaria de mais informações."
     );
-    const whatsappUrl = `https://wa.me/5561999887766?text=${message}`;
+    const whatsappUrl = `https://wa.me/556133563925?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 

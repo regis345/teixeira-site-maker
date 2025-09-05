@@ -53,7 +53,7 @@ const services = [
 
 export const Services = () => {
   const handleWhatsAppClick = () => {
-    const whatsappNumber = "5561999887766";
+    const whatsappNumber = "556133563925";
     const whatsappMessage = "Olá! Gostaria de mais informações sobre os serviços de investigação";
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');

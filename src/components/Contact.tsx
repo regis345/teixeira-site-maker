@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 export const Contact = () => {
-  const whatsappNumber = "5561999887766";
+  const whatsappNumber = "556133563925";
   const phoneNumber = "";
   
   const handleWhatsAppClick = () => {
